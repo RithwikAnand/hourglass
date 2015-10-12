@@ -1,0 +1,11 @@
+.hg-glass {
+	fill: #FCFEFE;
+}
+.hg-sand {
+	fill: #1B84AC;
+	stroke: #1B84AC;
+}
+.hg-sand-trail {
+	stroke: #1B84AC;
+	stroke-dasharray: 2px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hourglass - Demo Page</title>
+</head>
+<style>
+#content {
+	background: #2C2C2C;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<body>
+	<div id="content"></div>
+</body>
+<script type="text/javascript" src="js/hourglass.js"></script>
+<script>
+	var hourglass = new Hourglass();
+	hourglass.placeAt('content');
+	hourglass.start(10000);
+	/* Second One */
+	var hourglass1 = new Hourglass({
+		size: 400,
+			margin: {
+				outer: {
+					h: 50,
+					v: 20
+				},
+				inner: {
+					h: 40,
+					v: 10
+				}
+			},
+			height: {
+				glass: 210,
+				sand: 180
+			},
+			curve: {
+				glass: {
+					h: 0.5,
+					v: 0.95
+				},
+				sand: {
+					h: 0.5,
+					v: 0.95
+				}
+			},
+			showSandTrail: false
+	});
+	hourglass1.placeAt('content');
+	hourglass1.start(5000);
+	/* Third one */
+	var hourglass2 = new Hourglass();
+	hourglass2.placeAt('content');
+	hourglass2.start(15000);
+</script>
+</html>
